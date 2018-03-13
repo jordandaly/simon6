@@ -1,7 +1,7 @@
 //variables
 userSeq = [];
 simonSeq = [];
-const NUM_OF_LEVELS = 5;
+const NUM_OF_LEVELS = 25;
 var id, color, level, userHighScore;
 var strict = false;
 var error = false;
