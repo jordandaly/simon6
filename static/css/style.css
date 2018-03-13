@@ -1,0 +1,290 @@
+body {
+  background: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/arches.png");
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 70px;
+}
+/* originals
+.simonBoard {
+  margin: 0 auto;
+  margin-top: 50px;
+  border: solid 10px black;
+  width: 600px;
+  height: 600px;
+  border-radius: 600px;
+  box-shadow: -10px 10px 7px 0px rgba(50, 50, 50, 0.75);
+}
+
+.pad {
+  margin: 0;
+  float: left;
+  position: relative;
+  width: 290px;
+  height: 290px;
+  z-index: 8;
+  border: 5px solid black;
+}
+*/
+
+.simonBoard {
+  position: relative;
+  margin: 1em auto;
+  margin-top: 25px;
+  border: solid 10px black;
+  padding: 0;
+  width: 32em; height: 32em;
+  border-radius: 50%;
+  list-style: none;
+}
+
+.slice {
+  overflow: hidden;
+  position: absolute;
+  top: 0; right: 0;
+  width: 50%; height: 50%;
+  transform-origin: 0% 100%; 
+}
+
+
+.slice:first-child {
+  transform: rotate(0deg) skewY(-30deg);
+}
+
+.slice:nth-child(2) {
+  transform: rotate(60deg) skewY(-30deg);
+}
+
+.slice:nth-child(3) {
+  transform: rotate(120deg) skewY(-30deg);
+}
+
+.slice:nth-child(4) {
+  transform: rotate(180deg) skewY(-30deg);
+}
+
+.slice:nth-child(5) {
+  transform: rotate(240deg) skewY(-30deg);
+}
+
+.slice:nth-child(6) {
+  transform: rotate(300deg) skewY(-30deg);
+}
+.pad {
+  position: absolute;
+  left: -100%;
+  width: 200%; height: 200%;
+  border-radius: 50%;
+  
+}
+.slice:first-child .pad {
+  transform: skewY(30deg); /* unskew slice contents */
+}
+
+.slice:nth-child(2) .pad {
+  transform: skewY(30deg); /* unskew slice contents */
+}
+
+.slice:nth-child(3) .pad {
+  transform: skewY(30deg); /* unskew slice contents */
+}
+
+.slice:nth-child(4) .pad {
+  transform: skewY(30deg); /* unskew slice contents */
+}
+
+.slice:nth-child(5) .pad {
+  transform: skewY(30deg); /* unskew slice contents */
+}
+
+.slice:nth-child(6) .pad {
+  transform: skewY(30deg); /* unskew slice contents */
+}
+
+/*.slice:hover .pad { background: transparent; }  highlight on hover */
+
+.green {
+    background-color:#0a0;
+}
+
+.green-active {
+  background-color: darkgreen !important;
+}
+
+.red {
+  background-color: red;
+}
+
+.red-active {
+  background-color: darkred !important;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.yellow-active {
+  background-color: #e6d47e !important;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.blue-active {
+  background-color: darkblue !important;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.purple-active {
+  background-color: #563c5c !important;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.orange-active {
+  background-color: darkorange !important;
+}
+
+
+.board-controls {
+  border: 15px solid black;
+  height: 245px;
+  width: 245px;
+  border-radius: 150px;
+  background-color: white;
+  clear: both;
+  position: absolute;
+  z-index: 10;
+  margin-top: 120px;
+  margin-left: 120px;
+  -webkit-box-shadow: -6px 8px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.title {
+  font-size: 45px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.display {  
+  border: solid 1px black;
+  border-radius: 6px;
+  font-size: 1vw;
+  color: white;
+  width: 40px;
+  height: 30px;
+  font-size: 30px;
+  background-color: #342626;
+}
+
+.start, .strict {
+  text-align: center;
+  font-size: 1vw;
+  margin: 0px;
+  margin-left: 2px;
+  border: solid 3px black;
+  width: 55px;
+  height: 55px;
+  border-radius: 30px;
+  color: black;
+  line-height: 55px;
+}
+
+.start {  
+  background-color: white;
+}
+
+ .strict {
+  background-color: white;
+}
+
+.switch-container {
+  margin-top: 10px;
+}
+
+.outter-switch {
+  border: solid 2px black;
+  width: 60px;
+  height: 25px;
+  background-color: black;  
+}
+
+.outter-active {
+  background-color: gray !important;
+}
+
+.inner-switch {
+  background-color: gray;
+  width: 30px;
+  height: 25px;
+  position: relative !important;
+}
+
+.inner-inactive {
+  background-color: black !important;
+}
+
+.score {  
+  border: solid 1px black;
+  border-radius: 6px;
+  font-size: 1vw;
+  color: white;
+  width: 40px;
+  height: 30px;
+  font-size: 30px;
+  background-color: #342626;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
